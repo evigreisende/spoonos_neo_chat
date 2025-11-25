@@ -8,8 +8,8 @@ const chatbotToggler = document.querySelector("#chatbot-toggler");
 const closeChatbot = document.querySelector("#close-chatbot");
 
 // настройка API 
-const API_KEY = "AIzaSyCQXdM8mF1o7j7KlC2ue75X37ZIU_cDTVk";
-const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-pro:generateContent?key=${API_KEY}`;
+const API_KEY = "ваш ключ";
+const API_URL = `ссылка на модель`;
 
 // Инициализация пользовательских сообщений и данных файлов
 const userData = {
@@ -182,4 +182,5 @@ document.querySelector(".chat-form").appendChild(picker);
 sendMessage.addEventListener("click", (e) => handleOutgoingMessage(e));
 document.querySelector("#file-upload").addEventListener("click", () => fileInput.click());
 closeChatbot.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
+
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
