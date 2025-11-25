@@ -158,7 +158,7 @@ fileCancelButton.addEventListener("click", () => {
   fileUploadWrapper.classList.remove("file-uploaded");
 });
 
-// Инициализировать эмодзи пикер и бработать выбор эмодзи
+// Инициализировать эмодзи пикер и обработать выбор эмодзи
 const picker = new EmojiMart.Picker({
   theme: "light",
   skinTonePosition: "none",
@@ -184,3 +184,4 @@ document.querySelector("#file-upload").addEventListener("click", () => fileInput
 closeChatbot.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
 
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+
